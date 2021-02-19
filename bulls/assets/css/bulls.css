@@ -1,0 +1,59 @@
+/*.Game {
+	text-align: center;
+}
+
+.Menu {
+	width: fit-content;
+	background: yellow;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+.StatusBar {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+	height: fit-content;
+	border: 5px black solid;
+	border-radius: 10px;
+}
+
+button {
+	margin: 5px;
+}
+
+#Recorded {
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+}
+
+tr, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 20px;
+}
+
+p {
+	margin: 20px;
+}
+
+#Guess {
+}
+
+#Warn {
+	color: orange;
+}
+
+#Win {
+	color: green;
+	font-size: 200%;
+}
+
+#Lose {
+	color: red;
+	font-size: 200%;
+}
+*/

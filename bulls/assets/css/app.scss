@@ -1,0 +1,82 @@
+/* This file is for your main application css. */
+@import "./phoenix.css";
+
+html {
+	background-color: rgb(255, 255, 153);
+}
+
+header, h1 {
+	line-height: 200%;
+	margin: 0;
+	border: 3px black solid;
+	border-radius: 5px;
+}
+
+.Game {
+	text-align: center;
+}
+
+.Menu {
+	width: 25%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+	margin-bottom: 2px;
+}
+
+.StatusBar {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 5px black solid;
+	border-radius: 10px;
+	background: white;
+}
+
+input, button {
+	margin: 10px;
+	margin-bottom: 2px;
+	width: fit-content;
+}
+
+p {
+	margin: 5px;
+}
+#Guess {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+input[type="text"] {
+	background-color: white;
+}
+
+#Recorded {
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+	background: white;
+}
+
+tr, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	width: fit-content;
+	height: fit-content;
+}
+
+#Warn {
+	color: purple;
+}
+
+#Win {
+	color: green;
+	font-size: 200%;
+}
+
+#Lose {
+	color: red;
+	font-size: 200%;
+}
