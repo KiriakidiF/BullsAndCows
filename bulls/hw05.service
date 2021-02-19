@@ -1,0 +1,11 @@
+[Unit]
+Description=BullsandCows refactored to use Phoenix with server-side logic handling
+
+[Service]
+User=hw05
+WorkingDirectory=/home/hw05/BullsAndCows/bulls
+ExecStart=/home/hw05/BullsAndCows/bulls/start.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
