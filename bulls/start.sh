@@ -1,13 +1,23 @@
 #!/bin/bash
 
-
+#based on lecture notes
 export MIX_ENV=prod
-export PORT=4790
+export PORT=4795
 
-echo "Stopping old copy of app, if any..."
+CFGD=$(readlink -f ~/.config/hw05)
 
-_build/prod/rel/hw05/bin/hw05 stop || true
+if [ ! -e "$CFGD/base" ]; then
+	echo "Need to deploy first"
+	exit 1
+fi
+
+SECRET_KEY_BASE=$(cat "$CFGD/base")
+export SECRET_KEY_BASE
+
+echo "Removing existing instance of app if any"
+
+_build/prod/rel/bulls/bin/bulls stop || true
 
 echo "Starting app..."
 
-_build/prod/rel/hw05/bin/hw05 start
+_build/prod/rel/bulls/bin/bulls start
